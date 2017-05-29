@@ -27,7 +27,10 @@ export class AboutPage {
     this.quote = this.randomQuote();
     console.log(this.quote);
   }
-
+/**
+ * Update quote value
+ * @param refresher : Event
+ */
   newQuote(refresher) {
     //setTimeout idea from Ionic Docs!
     setTimeout( () => {
@@ -36,10 +39,18 @@ export class AboutPage {
     }, 1000);
   }
 
+/**
+ * Returns a random quote
+ */
   randomQuote() {
     return this.quotes[this.getRandomInt(0, this.quotes.length)];
   }
 
+/**
+ * Returns a random integer between $min and $max
+ * @param min int : minimum value
+ * @param max int : maximum value
+ */
   getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
