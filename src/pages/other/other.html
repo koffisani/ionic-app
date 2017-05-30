@@ -6,7 +6,33 @@
     </ion-navbar>
 </ion-header>
 <ion-content>
+    <ion-list>
+        <ion-item-sliding>
+            <ion-item><h2>Luna</h2></ion-item>
+            <ion-item-options side="left">
+            <button ion-button color="danger">
+                <ion-icon name="trash"></ion-icon>
+                Delete
+            </button>
+            </ion-item-options>
+        </ion-item-sliding>
+        <ion-item-sliding>
+            <ion-item><h2>Koffi</h2></ion-item>
+            <ion-item-options side="left">
+            <button ion-button color="danger">
+                <ion-icon name="trash"></ion-icon>
+                Delete
+            </button>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
+    
     <ion-slides pager>
+        
+        <ion-slide>
+            <img src="https://avatars1.githubusercontent.com/u/8408477?v=3&u=9e0dbcc32644c4af064a7c26b87f0164324e9d09&s=400">
+        </ion-slide>
+        
         <ion-slide>
             <img src="https://placekitten.com/201/301">
         </ion-slide>
@@ -14,5 +40,6 @@
         <ion-slide>
             <img src="https://placekitten.com/291/376">
         </ion-slide>
+
     </ion-slides>
 </ion-content>
